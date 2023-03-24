@@ -7,7 +7,6 @@ function puntos(number){
     numberCortado2 = number.substring((number.length - largoNumero), number.length)
     largoNumero += 4;
     number = numberCortado1 + "." + numberCortado2;
-    console.log(number);
   }
   return number;
 }
