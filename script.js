@@ -35,7 +35,24 @@ function invertir(inversion, porcentajeAnual, años){
   }
 }  
 
+
 parameter1 = parseInt(prompt("Ingrese la inversión anual que hará."));
+
+if(parameter1 == "" || parameter1 === null || isNaN(parameter1)){
+  parameter1 = 0;
+}
+
+
+
 parameter2 = parseInt(prompt("Ingrese la rentabilidad anual."));
+if(parameter2 == "" || parameter2 === null || isNaN(parameter2)){
+  parameter2 = 0;
+}
+
+
 parameter3 = parseInt(prompt("Ingrese la cantidad de años los cuales hará esta inversión."));
+if(parameter3 == "" || parameter3 === null || isNaN(parameter3)){
+  parameter3 = 0;
+}
+
 invertir(parameter1,parameter2,parameter3);
